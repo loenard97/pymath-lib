@@ -1,7 +1,7 @@
 import os
 import ctypes
 
-_CFRACTION = ctypes.CDLL(os.path.join(os.getcwd(), "lib", "fraction.dll"))
+_CFRACTION = ctypes.CDLL(os.path.join(os.path.dirname(__file__), "cmath", "bin", "fraction.dll"))
 
 
 class Fraction(ctypes.Structure):

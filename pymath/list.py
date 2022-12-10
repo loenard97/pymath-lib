@@ -1,7 +1,7 @@
 import os
 import ctypes
 
-_CLIST = ctypes.CDLL(os.path.join(os.getcwd(), "lib", "list.dll"))
+_CLIST = ctypes.CDLL(os.path.join(os.path.dirname(__file__), "cmath", "bin", "list.dll"))
 
 
 class ListNode(ctypes.Structure):

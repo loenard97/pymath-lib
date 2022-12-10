@@ -1,7 +1,7 @@
 import os
 import ctypes
 
-_CVEC3D = ctypes.CDLL(os.path.join(os.getcwd(), "lib", "vec3D.dll"))
+_CVEC3D = ctypes.CDLL(os.path.join(os.path.dirname(__file__), "cmath", "bin", "vec3D.dll"))
 _CVEC3D.len.restype = ctypes.c_double
 
 

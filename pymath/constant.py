@@ -1,7 +1,7 @@
 import os
 import ctypes
 
-_CCONSTANT = ctypes.CDLL(os.path.join(os.getcwd(), "lib", "constant.dll"))
+_CCONSTANT = ctypes.CDLL(os.path.join(os.path.dirname(__file__), "cmath", "bin", "constant.dll"))
 _CCONSTANT.pi.restype = ctypes.c_double
 _CCONSTANT.e.restype = ctypes.c_double
 
