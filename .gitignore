@@ -1,8 +1,8 @@
 /build
 /dist
+/venv
 /*.egg-info
 *.dll
 *.so
 *.exe
 *__pycache__*
-*test*
